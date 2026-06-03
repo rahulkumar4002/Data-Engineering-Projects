@@ -190,10 +190,9 @@ ORDER BY total_revenue DESC;
 
 
 -- Q17. Most expensive and cheapest product in each category.  
-SELECT category, MAX(unit_price) AS max_price, MIN(unit_price) AS min_price 
-FROM products 
+SELECT category, MAX(unit_price), MIN(unit_price)
+FROM products
 GROUP BY category;
-
 
 -- Q18. Product categories where average unit_price > ₹2000.  
 SELECT category 
@@ -274,9 +273,8 @@ VALUES (5016, 1011, 202, 1, 799.00, 0),
        (5017, 1011, 202, 1, 799.00, 0);
 
 -- 3. Update stock quantity
-UPDATE products 
-SET stock_qty = stock_qty - 2 
-WHERE product_id = 202;
+UPDATE products
+SET stock_qty = stock_qty - 2
 
 -- 4. COMMIT if successful (Use ROLLBACK instead of COMMIT to undo if you encounter an error)
 COMMIT;

@@ -1,4 +1,5 @@
 **SQL Basics Assignment**
+
 Overview
 This assignment covers fundamental SQL concepts including data retrieval, filtering, constraints, primary keys, foreign keys, aggregation functions, joins, CASE statements, and transaction management.
 

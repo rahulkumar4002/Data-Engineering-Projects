@@ -120,4 +120,3 @@ HAVING COUNT(*) > 1;
 SELECT *
 FROM superstore
 WHERE Sales IS NULL;
-

@@ -1,9 +1,8 @@
-
-# 🚀 Assignment 6 - Task 1 | PySpark Data Processing
+# 🚀 Assignment 6 - Task 2 | Apache Spark Concepts & PySpark Operations
 
 ## 📖 Overview
 
-This task demonstrates the fundamentals of Apache Spark using PySpark. It covers loading CSV data, performing DataFrame transformations, handling missing values, creating new columns, and saving the processed dataset in multiple formats.
+This task focuses on Apache Spark architecture, lazy evaluation, Spark optimizations, fault tolerance, DataFrame operations, and efficient data storage using Parquet.
 
 ---
 
@@ -18,86 +17,114 @@ This task demonstrates the fundamentals of Apache Spark using PySpark. It covers
 ## 📂 Project Structure
 
 ```
-task1/
-│── Task 1.ipynb
+task2/
+│── Task_2.ipynb
 │── employees.csv
-│── cleaned_data.csv
-│── parquet_data.parquet
+│── output.csv
+│── employee.parquet
+│── output.parquet
 └── README.md
 ```
 
 ---
 
-## 📋 Tasks Performed
+## 📋 Topics Covered
 
-- Initialize a SparkSession
-- Load employee CSV dataset
-- Display schema and data
-- Select required columns
-- Filter employees based on salary
-- Rename Salary column
-- Convert Salary datatype
-- Create Annual Salary column
-- Handle missing values
-- Perform DataFrame transformations
-- Save processed data as CSV
-- Save processed data as Parquet
-- Read Parquet file
-- Display execution plan
-- Count total records
+### Apache Spark Architecture
+
+- Driver
+- Executor
+- Cluster Manager
+
+### Lazy Evaluation
+
+- DAG (Directed Acyclic Graph)
+- Transformations
+- Actions
+
+### Data Processing
+
+- Read CSV
+- Infer Schema
+- Select Columns
+- Filter Data
+- Rename Columns
+- Cast Data Types
+
+### Spark Optimization
+
+- Catalyst Optimizer
+- Tungsten Engine
+- Predicate Pushdown
+- Partition Pruning
+
+### Fault Tolerance
+
+- Lineage Graph
+- DAG Recovery
+- Re-computation
+
+### File Formats
+
+- CSV
+- Parquet
 
 ---
 
-## 📊 Dataset
+## 📊 Practical Operations
 
-The dataset contains employee information including:
-
-- Employee ID
-- Name
-- Department
-- Salary
+- Load CSV Dataset
+- Display Schema
+- Filter Electronics Category
+- Rename Columns
+- Convert Data Types
+- Save CSV
+- Save Parquet
+- Read Parquet File
 
 ---
 
 ## ▶️ How to Run
 
-1. Install PySpark
+Install PySpark
 
 ```bash
 pip install pyspark
 ```
 
-2. Open Jupyter Notebook
+Launch Jupyter Notebook
 
 ```bash
 jupyter notebook
 ```
 
-3. Open **Task 1.ipynb**
-
-4. Run all notebook cells.
+Open **Task_2.ipynb** and execute all cells.
 
 ---
 
 ## 📁 Output Files
 
-- cleaned_data.csv
-- parquet_data.parquet
+- output.csv
+- employee.parquet
+- output.parquet
 
 ---
 
 ## 🎯 Learning Outcomes
 
-- Spark Session
-- DataFrame Operations
-- Filtering Data
-- Column Transformations
-- Handling Null Values
-- CSV & Parquet Processing
-- Spark Execution Plan
+After completing this task, you will understand:
+
+- Spark Architecture
+- Lazy Evaluation
+- DAG Execution
+- DataFrame Transformations
+- Fault Tolerance
+- Spark Optimizations
+- CSV vs Parquet
+- Efficient Big Data Processing
 
 ---
 
 ## ✅ Conclusion
 
-This task provides hands-on experience with PySpark DataFrames, transformations, and data storage formats, forming a strong foundation for big data processing.
+This task builds a strong understanding of Apache Spark's internal architecture and practical PySpark programming. It demonstrates efficient data processing, optimization techniques, and scalable storage formats used in real-world data engineering projects.

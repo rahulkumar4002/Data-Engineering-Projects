@@ -1,146 +1,102 @@
+# 🚀 Assignment 6 - Task 1 | PySpark Data Processing
 
-# PySpark Data Processing Assignment
+## 📖 Overview
 
-## 📌 Objective
-The objective of this assignment is to understand the basics of Apache Spark using PySpark and perform efficient data processing operations on an employee dataset.
+This task demonstrates the fundamentals of Apache Spark using PySpark. It covers loading CSV data, performing DataFrame transformations, handling missing values, creating new columns, and saving the processed dataset in multiple formats.
 
 ---
 
 ## 🛠️ Technologies Used
 
-- Python
+- Python 3
 - Apache Spark (PySpark)
 - Jupyter Notebook
 
 ---
 
-## 📂 Dataset
-
-The assignment uses an **Employee CSV dataset** containing information such as:
-
-- Employee Name
-- Department
-- Salary
-
----
-
-## 📋 Tasks Performed
-
-### 1. Create Spark Session
-- Initialize a SparkSession.
-
-### 2. Load CSV File
-- Read the employee dataset into a Spark DataFrame.
-
-### 3. Print Schema
-- Display the structure and data types of the dataset.
-
-### 4. Display Dataset
-- Show the contents of the DataFrame.
-
-### 5. Select Required Columns
-- Display only:
-  - Name
-  - Department
-  - Salary
-
-### 6. Filter Records
-- Show employees whose salary is greater than **50,000**.
-
-### 7. Rename Column
-- Rename:
-  - `Salary` → `Monthly_Salary`
-
-### 8. Change Data Type
-- Convert `Monthly_Salary` into Integer type.
-
-### 9. Create New Column
-- Add:
-  - `Annual_Salary = Monthly_Salary × 12`
-
-### 10. Handle Missing Values
-- Replace NULL values in salary with **0**.
-
-### 11. Data Processing Pipeline
-Perform multiple transformations using a PySpark pipeline.
-
-### 12. Save Output
-Store processed data in:
-
-- CSV format
-- Parquet format
-
-### 13. Read Parquet File
-Verify the saved Parquet dataset.
-
-### 14. Execution Plan
-Display the Spark execution plan using:
-
-```python
-explain(True)
-```
-
-### 15. Count Records
-Find the total number of records.
-
-### 16. Display First Five Records
-Preview the processed dataset.
-
----
-
-## 📁 Project Structure
+## 📂 Project Structure
 
 ```
-Task-1/
-│
-├── Task 1.ipynb
-├── employees.csv
-├── output/
-│   ├── csv_output/
-│   └── parquet_output/
+task1/
+│── Task 1.ipynb
+│── employees.csv
+│── cleaned_data.csv
+│── parquet_data.parquet
 └── README.md
 ```
 
 ---
 
-## 🚀 How to Run
+## 📋 Tasks Performed
 
-1. Install Apache Spark and Python.
-2. Install PySpark:
+- Initialize a SparkSession
+- Load employee CSV dataset
+- Display schema and data
+- Select required columns
+- Filter employees based on salary
+- Rename Salary column
+- Convert Salary datatype
+- Create Annual Salary column
+- Handle missing values
+- Perform DataFrame transformations
+- Save processed data as CSV
+- Save processed data as Parquet
+- Read Parquet file
+- Display execution plan
+- Count total records
+
+---
+
+## 📊 Dataset
+
+The dataset contains employee information including:
+
+- Employee ID
+- Name
+- Department
+- Salary
+
+---
+
+## ▶️ How to Run
+
+1. Install PySpark
 
 ```bash
 pip install pyspark
 ```
 
-3. Launch Jupyter Notebook:
+2. Open Jupyter Notebook
 
 ```bash
 jupyter notebook
 ```
 
-4. Open the notebook and run all cells sequentially.
+3. Open **Task 1.ipynb**
+
+4. Run all notebook cells.
 
 ---
 
-## 📊 Learning Outcomes
+## 📁 Output Files
 
-By completing this assignment, you will learn how to:
+- cleaned_data.csv
+- parquet_data.parquet
 
-- Create Spark Sessions
-- Read CSV files using PySpark
-- Work with DataFrames
-- Select and filter data
-- Rename columns
-- Change data types
-- Handle missing values
-- Create derived columns
-- Build transformation pipelines
-- Save data in CSV and Parquet formats
-- Read Parquet files
-- Analyze Spark execution plans
+---
+
+## 🎯 Learning Outcomes
+
+- Spark Session
+- DataFrame Operations
+- Filtering Data
+- Column Transformations
+- Handling Null Values
+- CSV & Parquet Processing
+- Spark Execution Plan
 
 ---
 
 ## ✅ Conclusion
 
-This assignment demonstrates the fundamental data processing capabilities of PySpark. It covers data loading, transformation, filtering, null handling, pipeline creation, and exporting data into optimized storage formats such as Parquet.
+This task provides hands-on experience with PySpark DataFrames, transformations, and data storage formats, forming a strong foundation for big data processing.
